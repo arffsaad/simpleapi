@@ -8,9 +8,9 @@ A simple API with login frontend to allow users to create an API key, and then m
 - cURL or use any request generator:
   - GET /api/test (no parameters)
     - Returns "It works" to indicate everything works fine
-  - GET /api/test/{id} (requires "apikey")
+  - GET /api/test/{id} (requires `apikey` in JSON)
     - Returns a string "content" according to respective id. Populate/seed the "test" table to test this easily.
-  - POST /api/test (requires "content" and "apikey")
+  - POST /api/test (requires `content` and `apikey` in JSON)
     - Stores the "content" string into the database. It does not store the apikey and/or credentials.
     
 - Revoke the key by logging in and press revoke.
